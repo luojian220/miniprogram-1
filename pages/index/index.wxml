@@ -11,6 +11,14 @@
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>
-  <!-- <view wx:for="{{[zero, 1, 2, 3, 4]}}"> {{item}} </view> -->
-   <!-- <web-view src="https://fapiao-sit.baozun.com/query?d=OTV2NDF6UVF2RG00UGUyVkRBdVUwcGt0VzFCK2RqdXJoeGxCL2pZbWk5ak1pTTBUOTZzZU5SY2oySGlIbkRnOXFyZlE2T2tiQTNoVHZITEJTdkhYUDNQNGFHWHdvSDNXZG9VejIzTFN5dWZuUU9PK3RWVFhMZ01Xa2RzSFJqYnpqbGdRLytHQWlXbW9PbEE3aG1xU3IyYmxxU2EyeFQwRGNMVmkvcXJ1T0owPQ%3D%3D" ></web-view> -->
+
+  <view class="btn-area">
+    <navigator url="/page/navigate/navigate?title=navigate" hover-class="navigator-hover">跳转到新页面</navigator>
+    <navigator url="../../redirect/redirect/redirect?title=redirect" open-type="redirect" hover-class="other-navigator-hover">在当前页打开</navigator>
+    <navigator url="/page/index/index" open-type="switchTab" hover-class="other-navigator-hover">切换 Tab</navigator>
+    <navigator target="miniProgram" open-type="navigate" app-id="" path="" extra-data="" version="release">打开绑定的小程序</navigator>
+  </view>
+
+  <view wx:for="{{[zero, 1, 2, 3, 4]}}"> {{item}} </view>
+   <!-- <web-view src="https://fapiao-sit.baozun.com/query?d=OTV2NDF6UVF2RG00UGUyVkRBdVUwcGt0VzFCK2RqdXJoeGxCL2pZbWk5ak1pTTBUOTZzZU5SY2oySGlIbkRnOXFyZlE2T2tiQTNoVHZITEJTdkhYUDNQNGFHWHdvSDNXZG9VejIzTFN5dWZuUU9PK3RWVFhMZ01Xa2RzSFJqYnpqbGdRLytHQWlXbW9PbEE3aG1xU3IyYmxxU2EyeFQwRGNMVmkvcXJ1T0owPQ%3D%3D" ></web-view> --> 
 </view>
