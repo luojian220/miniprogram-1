@@ -1,0 +1,20 @@
+<!--pages/detail/detail.wxml-->
+<view style="text-align:center"> {{title}} </view>
+<view> 点击左上角返回回到之前页面 </view>
+
+<view wx:for="{{[zero, 1, 2, 3, 4]}}"> {{item}} </view>
+
+<view class="page-body">
+  <view class="btn-area" id="buttonContainer">
+    <view class="button-sp-area">
+      <button type="primary" plain="true">按钮</button>
+      <button type="primary" disabled="true" plain="true">不可点击的按钮</button>
+      <button type="default" plain="true">按钮</button>
+      <button type="default" disabled="true" plain="true">按钮</button>
+
+      <button class="mini-btn" type="primary" data-gid="{{title}}" bindtap="goIndex" size="mini">返回首页</button>
+      <button class="mini-btn" type="default" size="mini">按钮</button>
+      <button class="mini-btn" type="warn" size="mini">按钮</button>
+    </view>
+  </view>
+</view>
